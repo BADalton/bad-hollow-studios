@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="BAD Hollow Studios — independent games and apps with atmosphere, logic, and a little bite." />
+  <meta name="theme-color" content="#08110f" />
+  <title>BAD Hollow Studios</title>
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgogIDxsaW5lYXJHcmFkaWVudCBpZD0ibWV0YWwiIHgxPSI5NiIgeTE9IjcwIiB4Mj0iNDEwIiB5Mj0iNDUwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRjJGNEYzIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ii40MiIgc3RvcC1jb2xvcj0iI0E2QjBBQSIvPgogICAgPHN0b3Agb2Zmc2V0PSIuNzIiIHN0b3AtY29sb3I9IiNFNEU4RTUiLz4KICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdEODk4MiIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJ2b2lkIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDI1NiAyMzUpIHJvdGF0ZSg5MCkgc2NhbGUoMTU4IDEyMikiPgogICAgPHN0b3Agc3RvcC1jb2xvcj0iIzEzMjQxRSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDUwOTA4Ii8+CiAgPC9yYWRpYWxHcmFkaWVudD4KPC9kZWZzPgo8ZyBvcGFjaXR5PSIuOTYiPgogIDxwYXRoIGQ9Ik0yNTYgMjZMMjY5IDczTDI4OSAyOEwyOTQgNzhMMzI2IDQwTDMyMCA4OUwzNjEgNTlMMzQ0IDEwNUwzOTEgODZMMzY0IDEyN0w0MTUgMTIwTDM4MCAxNTRMNDMyIDE2MEwzOTEgMTg1TDQ0MCAyMDVMMzk0IDIyMEw0MzggMjUzTDM4OSAyNThMNDI4IDMwMEwzNzcgMjkzTDQwNyAzNDJMMzYwIDMyNUwzNzcgMzc5TDMzNiAzNTFMMzQxIDQwOEwzMDggMzY3TDI5OSA0MjVMMjc2IDM3N0wyNTYgNDg2TDIzNiAzNzdMMjEzIDQyNUwyMDQgMzY3TDE3MSA0MDhMMTc2IDM1MUwxMzUgMzc5TDE1MiAzMjVMMTA1IDM0MkwxMzUgMjkzTDg0IDMwMEwxMjMgMjU4TDc0IDI1M0wxMTggMjIwTDcyIDIwNUwxMjEgMTg1TDgwIDE2MEwxMzIgMTU0TDk3IDEyMEwxNDggMTI3TDEyMSA4NkwxNjggMTA1TDE1MSA1OUwxOTIgODlMMTg2IDQwTDIxOCA3OEwyMjMgMjhMMjQzIDczTDI1NiAyNloiIGZpbGw9InVybCgjbWV0YWwpIiBmaWxsLW9wYWNpdHk9Ii45Ii8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjI0NiIgcng9IjE0OCIgcnk9IjE4OCIgZmlsbD0iIzA3MTAwRCIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSIyNDYiIHJ4PSIxMjMiIHJ5PSIxNjIiIGZpbGw9InVybCgjdm9pZCkiIHN0cm9rZT0iI0M3Q0VDOSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjI0NiIgcng9IjkzIiByeT0iMTI4IiBzdHJva2U9IiM2NjczNkIiIHN0cm9rZS1vcGFjaXR5PSIuNjUiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxwYXRoIGQ9Ik0yMTUgMjM3QzIyMSAxODkgMjM2IDE2MSAyNTYgMTQ1QzI3NyAxNjMgMjkxIDE5MCAyOTcgMjM3QzI4OCAyMjIgMjc0IDIxMyAyNTYgMjEzQzIzOCAyMTMgMjI0IDIyMiAyMTUgMjM3WiIgZmlsbD0iIzlFQUFBMyIgZmlsbC1vcGFjaXR5PSIuMzQiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTIiIHI9IjgiIGZpbGw9IiNFOEVDRTkiLz4KPC9nPgo8L3N2Zz4=" type="image/svg+xml" />
+  <style>
+/* BAD Hollow Studios — static site */
+:root {
+  --ink: #eef2ef;
+  --muted: #a7b0aa;
+  --muted-2: #748079;
+  --night: #050908;
+  --night-2: #08110f;
+  --panel: #0b1512;
+  --panel-2: #0f1d19;
+  --green: #355e50;
+  --green-bright: #789d8c;
+  --silver: #cbd1cd;
+  --line: rgba(223, 233, 227, 0.14);
+  --line-strong: rgba(223, 233, 227, 0.25);
+  --radius: 24px;
+  --max: 1180px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 80% 5%, rgba(53,94,80,.16), transparent 28rem),
+    linear-gradient(180deg, #050908 0%, #08100e 58%, #050908 100%);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+
+.noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .13;
+  z-index: 100;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.88' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.25'/%3E%3C/svg%3E");
+}
+
+.sr-only {
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(calc(100% - 36px), 1240px);
+  margin: 16px auto 0;
+  padding: 12px 14px 12px 16px;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 18px;
+  background: rgba(5,9,8,.78);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 20px 60px rgba(0,0,0,.28);
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+}
+.brand-mark { width: 42px; height: 42px; }
+.brand-type { display:flex; flex-direction:column; line-height:1; }
+.brand-type strong {
+  font-size: 13px;
+  letter-spacing: .17em;
+  font-weight: 700;
+}
+.brand-type small {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: .34em;
+}
+
+.site-nav { display:flex; align-items:center; gap: 4px; }
+.site-nav a {
+  padding: 9px 13px;
+  border-radius: 12px;
+  color: var(--muted);
+  text-decoration:none;
+  font-size: 13px;
+  transition: .2s ease;
+}
+.site-nav a:hover {
+  color: var(--ink);
+  background: rgba(255,255,255,.06);
+}
+
+.menu-toggle {
+  display:none;
+  width:42px;height:42px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:transparent;
+  color:white;
+  padding:0;
+}
+.menu-toggle span:not(.sr-only) {
+  display:block;
+  width:16px;height:1px;
+  background:white;
+  margin:5px auto;
+}
+
+.section {
+  width: min(calc(100% - 40px), var(--max));
+  margin: 0 auto;
+}
+
+.hero {
+  min-height: 760px;
+  display:grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr);
+  align-items:center;
+  gap: 44px;
+  padding: 90px 0 80px;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: var(--green-bright);
+  font-size: 11px;
+  font-weight:700;
+  letter-spacing:.26em;
+}
+
+.hero h1, .section h2 {
+  font-family: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -.045em;
+}
+
+.hero h1 {
+  margin:0;
+  max-width:720px;
+  font-size: clamp(56px, 7.8vw, 108px);
+  line-height:.87;
+}
+.hero h1 span {
+  color: #aab4ae;
+  font-style: italic;
+}
+.hero-lede {
+  max-width: 620px;
+  margin: 30px 0 0;
+  color: var(--muted);
+  font-size: clamp(16px, 1.55vw, 20px);
+  line-height:1.72;
+}
+
+.hero-actions { display:flex; gap:12px; margin-top: 34px; flex-wrap:wrap; }
+.button {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding: 0 18px;
+  border-radius: 14px;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:650;
+  transition:.2s ease;
+}
+.button-primary {
+  background: #d9dfdb;
+  color:#07100d;
+}
+.button-primary:hover { transform:translateY(-2px); background:#eff2f0; }
+.button-ghost {
+  border:1px solid var(--line-strong);
+  color:var(--ink);
+  background:rgba(255,255,255,.025);
+}
+.button-ghost:hover { transform:translateY(-2px); background:rgba(255,255,255,.06); }
+
+.hero-art {
+  position:relative;
+  min-height: 520px;
+  display:grid;
+  place-items:center;
+}
+.hero-mark {
+  position:relative;
+  width:min(70%, 330px);
+  filter: drop-shadow(0 24px 80px rgba(0,0,0,.55));
+  animation: breathe 7s ease-in-out infinite;
+}
+.halo {
+  position:absolute;
+  border-radius:50%;
+  border:1px solid rgba(211,223,216,.10);
+  transform:rotate(-10deg);
+}
+.halo-one { width: 420px; height: 510px; }
+.halo-two { width: 530px; height: 360px; transform:rotate(18deg); opacity:.65; }
+
+.hero-caption {
+  position:absolute;
+  bottom:24px;
+  display:flex;
+  gap:9px;
+  color:var(--muted-2);
+  font-size:10px;
+  letter-spacing:.36em;
+}
+.hero-caption .slash { color:var(--green-bright); }
+
+@keyframes breathe {
+  0%,100% { transform:translateY(0) rotate(-1deg); }
+  50% { transform:translateY(-10px) rotate(1deg); }
+}
+
+.work-section { padding: 80px 0 30px; }
+.section-heading {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:80px;
+  align-items:end;
+  margin-bottom:34px;
+}
+.section h2 {
+  margin:0;
+  font-size: clamp(42px, 6vw, 74px);
+  line-height:.96;
+}
+.section-intro {
+  margin:0 0 5px;
+  color:var(--muted);
+  max-width:520px;
+  line-height:1.75;
+}
+
+.project-grid {
+  display:grid;
+  grid-template-columns:repeat(12, 1fr);
+  gap:16px;
+}
+.project-card {
+  grid-column: span 6;
+  position:relative;
+  min-height:440px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px;
+  background:
+    radial-gradient(circle at 80% 0%, rgba(95,132,114,.12), transparent 40%),
+    linear-gradient(145deg, rgba(14,27,23,.90), rgba(7,13,11,.93));
+  transition: transform .25s ease, border-color .25s ease;
+}
+.project-card:hover {
+  transform:translateY(-4px);
+  border-color:var(--line-strong);
+}
+.project-featured {
+  grid-column: span 12;
+  min-height:500px;
+  flex-direction:row;
+  align-items:stretch;
+  gap:28px;
+}
+.project-featured .project-icon-wrap { width: 48%; min-height: 100%; }
+.project-featured .project-body {
+  width:52%;
+  align-self:flex-end;
+  padding:18px 16px 18px 0;
+}
+.project-icon-wrap {
+  min-height:210px;
+  display:grid;
+  place-items:center;
+}
+.project-icon {
+  width:min(64%, 250px);
+  aspect-ratio:1;
+  border-radius:28%;
+  box-shadow:0 24px 70px rgba(0,0,0,.42);
+}
+.project-featured .project-icon { width:min(72%, 330px); }
+
+.project-body { margin-top:22px; }
+.project-meta {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px 14px;
+  color:var(--muted-2);
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+}
+.status {
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  color:var(--green-bright);
+}
+.status::before {
+  content:"";
+  width:6px;height:6px;
+  border-radius:50%;
+  background:currentColor;
+  box-shadow:0 0 0 4px rgba(120,157,140,.09);
+}
+.status.soon { color:#9d98b3; }
+.project-card h3 {
+  margin:13px 0 9px;
+  font-size:30px;
+  letter-spacing:-.04em;
+}
+.project-card p {
+  margin:0;
+  color:var(--muted);
+  max-width:620px;
+  line-height:1.7;
+}
+.project-link {
+  display:inline-flex;
+  gap:8px;
+  margin-top:18px;
+  color:#dbe2dd;
+  font-size:13px;
+  text-decoration:none;
+  border-bottom:1px solid rgba(255,255,255,.18);
+  padding-bottom:3px;
+}
+.project-link:hover { color:white; border-color:white; }
+.project-link.muted { color:var(--muted-2); border:0; }
+
+.studio-section { padding: 110px 0 40px; }
+.studio-panel {
+  position:relative;
+  overflow:hidden;
+  display:grid;
+  grid-template-columns:.7fr 1.3fr;
+  min-height:520px;
+  border:1px solid var(--line);
+  border-radius:32px;
+  background:
+    linear-gradient(120deg, rgba(20,38,31,.86), rgba(7,13,11,.98)),
+    #0a1210;
+}
+.studio-panel::after {
+  content:"";
+  position:absolute;
+  width:540px;height:540px;
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:48%;
+  right:-230px;top:-130px;
+  transform:rotate(28deg);
+}
+.studio-kicker {
+  border-right:1px solid var(--line);
+  padding:34px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  color:var(--muted-2);
+  font-size:10px;
+  letter-spacing:.24em;
+}
+.studio-kicker img { width:140px; opacity:.72; }
+.studio-copy {
+  align-self:end;
+  padding:60px;
+  position:relative;
+  z-index:2;
+}
+.studio-copy h2 { max-width:700px; }
+.studio-copy > p:last-child {
+  max-width:650px;
+  margin:26px 0 0;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.contact-section { padding: 120px 0 100px; text-align:center; }
+.contact-section h2 { font-size: clamp(50px, 7vw, 84px); }
+.contact-section > p:not(.eyebrow) {
+  max-width:650px;
+  margin:22px auto 38px;
+  color:var(--muted);
+  line-height:1.75;
+}
+.contact-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  text-align:left;
+}
+.contact-grid a {
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+  padding:22px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:rgba(255,255,255,.02);
+  text-decoration:none;
+  transition:.2s ease;
+}
+.contact-grid a:hover { background:rgba(255,255,255,.055); transform:translateY(-2px); }
+.contact-label {
+  color:var(--muted-2);
+  text-transform:uppercase;
+  letter-spacing:.15em;
+  font-size:9px;
+}
+.contact-grid strong { font-size:14px; font-weight:550; overflow-wrap:anywhere; }
+
+.site-footer {
+  width:min(calc(100% - 40px), var(--max));
+  margin:0 auto;
+  padding:28px 0 42px;
+  border-top:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  color:var(--muted-2);
+  font-size:10px;
+  letter-spacing:.08em;
+}
+.footer-brand { display:flex;align-items:center;gap:10px; letter-spacing:.18em; }
+.footer-brand img { width:26px;height:26px; opacity:.7; }
+
+@media (max-width: 900px) {
+  .hero {
+    min-height:auto;
+    grid-template-columns:1fr;
+    padding-top:80px;
+  }
+  .hero-art { min-height:380px; }
+  .halo-one { width:310px;height:380px; }
+  .halo-two { width:390px;height:270px; }
+
+  .section-heading { grid-template-columns:1fr; gap:24px; }
+  .project-featured { flex-direction:column; }
+  .project-featured .project-icon-wrap,
+  .project-featured .project-body { width:100%; }
+  .project-featured .project-body { padding:0; }
+
+  .studio-panel { grid-template-columns:1fr; }
+  .studio-kicker {
+    min-height:190px;
+    border-right:0;
+    border-bottom:1px solid var(--line);
+    flex-direction:row;
+    align-items:flex-end;
+  }
+  .studio-kicker img { width:92px; }
+  .studio-copy { padding:40px 30px; }
+}
+
+@media (max-width: 680px) {
+  .site-header { width:min(calc(100% - 20px), 1240px); margin-top:10px; }
+  .brand-type { display:none; }
+  .menu-toggle { display:block; }
+  .site-nav {
+    position:absolute;
+    top:calc(100% + 8px);
+    right:0;
+    display:none;
+    min-width:180px;
+    flex-direction:column;
+    align-items:stretch;
+    padding:8px;
+    border:1px solid var(--line);
+    border-radius:14px;
+    background:#08100e;
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+  }
+  .site-nav.open { display:flex; }
+  .site-nav a { padding:12px; }
+
+  .section { width:min(calc(100% - 24px), var(--max)); }
+  .hero { padding:64px 0 54px; gap:20px; }
+  .hero h1 { font-size:clamp(52px, 16vw, 76px); }
+  .hero-art { min-height:310px; }
+  .hero-mark { width:190px; }
+  .halo-one { width:230px;height:290px; }
+  .halo-two { width:290px;height:210px; }
+
+  .work-section { padding-top:55px; }
+  .project-card, .project-featured { grid-column:span 12; min-height:390px; }
+  .project-featured .project-icon { width:min(70%, 260px); }
+
+  .studio-section { padding-top:80px; }
+  .studio-copy { padding:34px 24px; }
+
+  .contact-grid { grid-template-columns:1fr; }
+  .site-footer { width:calc(100% - 24px); flex-direction:column; align-items:flex-start; }
+}
+
+</style>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="BAD Hollow Studios home">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgogIDxsaW5lYXJHcmFkaWVudCBpZD0ibWV0YWwiIHgxPSI5NiIgeTE9IjcwIiB4Mj0iNDEwIiB5Mj0iNDUwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRjJGNEYzIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ii40MiIgc3RvcC1jb2xvcj0iI0E2QjBBQSIvPgogICAgPHN0b3Agb2Zmc2V0PSIuNzIiIHN0b3AtY29sb3I9IiNFNEU4RTUiLz4KICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdEODk4MiIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJ2b2lkIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDI1NiAyMzUpIHJvdGF0ZSg5MCkgc2NhbGUoMTU4IDEyMikiPgogICAgPHN0b3Agc3RvcC1jb2xvcj0iIzEzMjQxRSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDUwOTA4Ii8+CiAgPC9yYWRpYWxHcmFkaWVudD4KPC9kZWZzPgo8ZyBvcGFjaXR5PSIuOTYiPgogIDxwYXRoIGQ9Ik0yNTYgMjZMMjY5IDczTDI4OSAyOEwyOTQgNzhMMzI2IDQwTDMyMCA4OUwzNjEgNTlMMzQ0IDEwNUwzOTEgODZMMzY0IDEyN0w0MTUgMTIwTDM4MCAxNTRMNDMyIDE2MEwzOTEgMTg1TDQ0MCAyMDVMMzk0IDIyMEw0MzggMjUzTDM4OSAyNThMNDI4IDMwMEwzNzcgMjkzTDQwNyAzNDJMMzYwIDMyNUwzNzcgMzc5TDMzNiAzNTFMMzQxIDQwOEwzMDggMzY3TDI5OSA0MjVMMjc2IDM3N0wyNTYgNDg2TDIzNiAzNzdMMjEzIDQyNUwyMDQgMzY3TDE3MSA0MDhMMTc2IDM1MUwxMzUgMzc5TDE1MiAzMjVMMTA1IDM0MkwxMzUgMjkzTDg0IDMwMEwxMjMgMjU4TDc0IDI1M0wxMTggMjIwTDcyIDIwNUwxMjEgMTg1TDgwIDE2MEwxMzIgMTU0TDk3IDEyMEwxNDggMTI3TDEyMSA4NkwxNjggMTA1TDE1MSA1OUwxOTIgODlMMTg2IDQwTDIxOCA3OEwyMjMgMjhMMjQzIDczTDI1NiAyNloiIGZpbGw9InVybCgjbWV0YWwpIiBmaWxsLW9wYWNpdHk9Ii45Ii8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjI0NiIgcng9IjE0OCIgcnk9IjE4OCIgZmlsbD0iIzA3MTAwRCIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSIyNDYiIHJ4PSIxMjMiIHJ5PSIxNjIiIGZpbGw9InVybCgjdm9pZCkiIHN0cm9rZT0iI0M3Q0VDOSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjI0NiIgcng9IjkzIiByeT0iMTI4IiBzdHJva2U9IiM2NjczNkIiIHN0cm9rZS1vcGFjaXR5PSIuNjUiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxwYXRoIGQ9Ik0yMTUgMjM3QzIyMSAxODkgMjM2IDE2MSAyNTYgMTQ1QzI3NyAxNjMgMjkxIDE5MCAyOTcgMjM3QzI4OCAyMjIgMjc0IDIxMyAyNTYgMjEzQzIzOCAyMTMgMjI0IDIyMiAyMTUgMjM3WiIgZmlsbD0iIzlFQUFBMyIgZmlsbC1vcGFjaXR5PSIuMzQiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTIiIHI9IjgiIGZpbGw9IiNFOEVDRTkiLz4KPC9nPgo8L3N2Zz4=" alt="" class="brand-mark" />
+      <span class="brand-type">
+        <strong>BAD HOLLOW</strong>
+        <small>STUDIOS</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+
+    <nav id="site-nav" class="site-nav">
+      <a href="#work">Work</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">INDEPENDENT GAMES + APPS</p>
+        <h1>Small studio.<br><span>Strange little worlds.</span></h1>
+        <p class="hero-lede">
+          BAD Hollow Studios builds puzzles, utilities, and offbeat digital things
+          with atmosphere, personality, and just enough sharp edges.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore the work</a>
+          <a class="button button-ghost" href="mailto:hello@badhollowstudios.com">Say hello</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="halo halo-one"></div>
+        <div class="halo halo-two"></div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgogIDxsaW5lYXJHcmFkaWVudCBpZD0ibWV0YWwiIHgxPSI5NiIgeTE9IjcwIiB4Mj0iNDEwIiB5Mj0iNDUwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRjJGNEYzIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ii40MiIgc3RvcC1jb2xvcj0iI0E2QjBBQSIvPgogICAgPHN0b3Agb2Zmc2V0PSIuNzIiIHN0b3AtY29sb3I9IiNFNEU4RTUiLz4KICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdEODk4MiIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJ2b2lkIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDI1NiAyMzUpIHJvdGF0ZSg5MCkgc2NhbGUoMTU4IDEyMikiPgogICAgPHN0b3Agc3RvcC1jb2xvcj0iIzEzMjQxRSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDUwOTA4Ii8+CiAgPC9yYWRpYWxHcmFkaWVudD4KPC9kZWZzPgo8ZyBvcGFjaXR5PSIuOTYiPgogIDxwYXRoIGQ9Ik0yNTYgMjZMMjY5IDczTDI4OSAyOEwyOTQgNzhMMzI2IDQwTDMyMCA4OUwzNjEgNTlMMzQ0IDEwNUwzOTEgODZMMzY0IDEyN0w0MTUgMTIwTDM4MCAxNTRMNDMyIDE2MEwzOTEgMTg1TDQ0MCAyMDVMMzk0IDIyMEw0MzggMjUzTDM4OSAyNThMNDI4IDMwMEwzNzcgMjkzTDQwNyAzNDJMMzYwIDMyNUwzNzcgMzc5TDMzNiAzNTFMMzQxIDQwOEwzMDggMzY3TDI5OSA0MjVMMjc2IDM3N0wyNTYgNDg2TDIzNiAzNzdMMjEzIDQyNUwyMDQgMzY3TDE3MSA0MDhMMTc2IDM1MUwxMzUgMzc5TDE1MiAzMjVMMTA1IDM0MkwxMzUgMjkzTDg0IDMwMEwxMjMgMjU4TDc0IDI1M0wxMTggMjIwTDcyIDIwNUwxMjEgMTg1TDgwIDE2MEwxMzIgMTU0TDk3IDEyMEwxNDggMTI3TDEyMSA4NkwxNjggMTA1TDE1MSA1OUwxOTIgODlMMTg2IDQwTDIxOCA3OEwyMjMgMjhMMjQzIDczTDI1NiAyNloiIGZpbGw9InVybCgjbWV0YWwpIiBmaWxsLW9wYWNpdHk9Ii45Ii8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjI0NiIgcng9IjE0OCIgcnk9IjE4OCIgZmlsbD0iIzA3MTAwRCIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSIyNDYiIHJ4PSIxMjMiIHJ5PSIxNjIiIGZpbGw9InVybCgjdm9pZCkiIHN0cm9rZT0iI0M3Q0VDOSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjI0NiIgcng9IjkzIiByeT0iMTI4IiBzdHJva2U9IiM2NjczNkIiIHN0cm9rZS1vcGFjaXR5PSIuNjUiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxwYXRoIGQ9Ik0yMTUgMjM3QzIyMSAxODkgMjM2IDE2MSAyNTYgMTQ1QzI3NyAxNjMgMjkxIDE5MCAyOTcgMjM3QzI4OCAyMjIgMjc0IDIxMyAyNTYgMjEzQzIzOCAyMTMgMjI0IDIyMiAyMTUgMjM3WiIgZmlsbD0iIzlFQUFBMyIgZmlsbC1vcGFjaXR5PSIuMzQiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTIiIHI9IjgiIGZpbGw9IiNFOEVDRTkiLz4KPC9nPgo8L3N2Zz4=" alt="" class="hero-mark" />
+        <div class="hero-caption">
+          <span>BAD</span>
+          <span class="slash">/</span>
+          <span>HOLLOW</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section work-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE WORK</p>
+          <h2>Different moods.<br>Same weird little brain.</h2>
+        </div>
+        <p class="section-intro">
+          From murder mysteries to cozy pitties to disposable email,
+          the common thread is simple: make something distinct, useful,
+          satisfying, or preferably all three.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <div class="project-icon-wrap">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgogPGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iNDAiIHkxPSIyMCIgeDI9IjQ3MCIgeTI9IjQ5MCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjMUExNTE0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM0UyNDFGIi8+CiA8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iODYiIGZpbGw9InVybCgjZykiLz4KPHBhdGggZD0iTTkyIDEwNEg0MjBWNDA4SDkyVjEwNFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwuMjApIiBzdHJva2Utd2lkdGg9IjMiLz4KPHRleHQgeD0iMjU2IiB5PSIyNDQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNGNUY2RjQiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMzgiPuKcpjwvdGV4dD4KPHRleHQgeD0iMjU2IiB5PSIzNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNFN0VCRTgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zaXplPSIzNCIgbGV0dGVyLXNwYWNpbmc9IjgiPkdVSUxUIEdSSUQ8L3RleHQ+Cjwvc3ZnPg==" alt="Guilt Grid icon placeholder" class="project-icon" />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="status live">Available now</span>
+              <span>iPhone + iPad</span>
+            </div>
+            <h3>Guilt Grid</h3>
+            <p>
+              Murder mystery logic puzzles where every alibi, room, weapon,
+              and clue has to survive the grid.
+            </p>
+            <a class="project-link" href="https://apps.apple.com/us/app/guilt-grid/id6791083356" target="_blank" rel="noopener">
+              View on the App Store <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon-wrap">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgogPGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iNDAiIHkxPSIyMCIgeDI9IjQ3MCIgeTI9IjQ5MCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjNkY1QTg2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjQURDNTlCIi8+CiA8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTA4IiBmaWxsPSJ1cmwoI2cpIi8+CjxwYXRoIGQ9Ik05MiAxMDRINDIwVjQwOEg5MlYxMDRaIiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsLjIwKSIgc3Ryb2tlLXdpZHRoPSIzIi8+Cjx0ZXh0IHg9IjI1NiIgeT0iMjQ0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjRjVGNkY0IiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTM4Ij7imaU8L3RleHQ+Cjx0ZXh0IHg9IjI1NiIgeT0iMzYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjRTdFQkU4IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtc2l6ZT0iMzQiIGxldHRlci1zcGFjaW5nPSI4Ij5QSVRUSUU8L3RleHQ+Cjwvc3ZnPg==" alt="Pittie Puzzles icon placeholder" class="project-icon" />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="status live">Available now</span>
+              <span>iPhone</span>
+            </div>
+            <h3>Pittie Puzzles</h3>
+            <p>
+              Cozy path-drawing puzzles starring Leela and friends.
+              Softer around the edges. Still annoyingly good at eating your time.
+            </p>
+            <a class="project-link" href="https://apps.apple.com/us/app/pittie-puzzles/id6816330434" target="_blank" rel="noopener">
+              View on the App Store <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon-wrap">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgogPGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iNDAiIHkxPSIyMCIgeDI9IjQ3MCIgeTI9IjQ5MCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjMTUxMTFGIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNEYyQTZFIi8+CiA8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iODYiIGZpbGw9InVybCgjZykiLz4KPHBhdGggZD0iTTkyIDEwNEg0MjBWNDA4SDkyVjEwNFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwuMjApIiBzdHJva2Utd2lkdGg9IjMiLz4KPHRleHQgeD0iMjU2IiB5PSIyNDQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNGNUY2RjQiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMzgiPi88L3RleHQ+Cjx0ZXh0IHg9IjI1NiIgeT0iMzYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjRTdFQkU4IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtc2l6ZT0iMzQiIGxldHRlci1zcGFjaW5nPSI4Ij5GQURFL0FXQVk8L3RleHQ+Cjwvc3ZnPg==" alt="Fade/Away icon placeholder" class="project-icon" />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="status live">Available now</span>
+              <span>Privacy utility</span>
+            </div>
+            <h3>Fade/Away</h3>
+            <p>
+              Temporary email addresses built to disappear — for sign-ups,
+              short-lived conversations, and keeping your real inbox out of the mess.
+            </p>
+            <a class="project-link" href="https://apps.apple.com/app/id6793329641" target="_blank" rel="noopener">
+              View on the App Store <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon-wrap">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgogPGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iNDAiIHkxPSIyMCIgeDI9IjQ3MCIgeTI9IjQ5MCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjMUUyMjIxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNTg2RDYyIi8+CiA8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iODYiIGZpbGw9InVybCgjZykiLz4KPHBhdGggZD0iTTkyIDEwNEg0MjBWNDA4SDkyVjEwNFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwuMjApIiBzdHJva2Utd2lkdGg9IjMiLz4KPHRleHQgeD0iMjU2IiB5PSIyNDQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNGNUY2RjQiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMzgiPuKYhTwvdGV4dD4KPHRleHQgeD0iMjU2IiB5PSIzNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNFN0VCRTgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zaXplPSIzNCIgbGV0dGVyLXNwYWNpbmc9IjgiPlNDUkFUQ0g8L3RleHQ+Cjwvc3ZnPg==" alt="Scratch Vault icon placeholder" class="project-icon" />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="status live">Released</span>
+              <span>iPhone</span>
+            </div>
+            <h3>Scratch Vault</h3>
+            <p>
+              A digital scratch-off collection built for the little serotonin hit —
+              no real-money gambling required.
+            </p>
+            <span class="project-link muted">App link coming to the studio site</span>
+          </div>
+        </article>
+
+        <article class="project-card project-soon">
+          <div class="project-icon-wrap">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgogPGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iNDAiIHkxPSIyMCIgeDI9IjQ3MCIgeTI9IjQ5MCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjMTAxNDFEIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMkQyMTQ2Ii8+CiA8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iODYiIGZpbGw9InVybCgjZykiLz4KPHBhdGggZD0iTTkyIDEwNEg0MjBWNDA4SDkyVjEwNFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwuMjApIiBzdHJva2Utd2lkdGg9IjMiLz4KPHRleHQgeD0iMjU2IiB5PSIyNDQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNGNUY2RjQiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMzgiPuKXhzwvdGV4dD4KPHRleHQgeD0iMjU2IiB5PSIzNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNFN0VCRTgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zaXplPSIzNCIgbGV0dGVyLXNwYWNpbmc9IjgiPkRFQUQgU1BBQ0VTPC90ZXh0Pgo8L3N2Zz4=" alt="Dead Spaces icon placeholder" class="project-icon" />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="status soon">In development</span>
+              <span>Logic puzzle</span>
+            </div>
+            <h3>Dead Spaces</h3>
+            <p>
+              Numbered paths, collapsing spaces, and one tiny hooded traveler
+              trying very hard not to step somewhere catastrophically stupid.
+            </p>
+            <span class="project-link muted">Coming soon</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="studio" class="section studio-section">
+      <div class="studio-panel">
+        <div class="studio-kicker">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgogIDxsaW5lYXJHcmFkaWVudCBpZD0ibWV0YWwiIHgxPSI5NiIgeTE9IjcwIiB4Mj0iNDEwIiB5Mj0iNDUwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRjJGNEYzIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ii40MiIgc3RvcC1jb2xvcj0iI0E2QjBBQSIvPgogICAgPHN0b3Agb2Zmc2V0PSIuNzIiIHN0b3AtY29sb3I9IiNFNEU4RTUiLz4KICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdEODk4MiIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJ2b2lkIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDI1NiAyMzUpIHJvdGF0ZSg5MCkgc2NhbGUoMTU4IDEyMikiPgogICAgPHN0b3Agc3RvcC1jb2xvcj0iIzEzMjQxRSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDUwOTA4Ii8+CiAgPC9yYWRpYWxHcmFkaWVudD4KPC9kZWZzPgo8ZyBvcGFjaXR5PSIuOTYiPgogIDxwYXRoIGQ9Ik0yNTYgMjZMMjY5IDczTDI4OSAyOEwyOTQgNzhMMzI2IDQwTDMyMCA4OUwzNjEgNTlMMzQ0IDEwNUwzOTEgODZMMzY0IDEyN0w0MTUgMTIwTDM4MCAxNTRMNDMyIDE2MEwzOTEgMTg1TDQ0MCAyMDVMMzk0IDIyMEw0MzggMjUzTDM4OSAyNThMNDI4IDMwMEwzNzcgMjkzTDQwNyAzNDJMMzYwIDMyNUwzNzcgMzc5TDMzNiAzNTFMMzQxIDQwOEwzMDggMzY3TDI5OSA0MjVMMjc2IDM3N0wyNTYgNDg2TDIzNiAzNzdMMjEzIDQyNUwyMDQgMzY3TDE3MSA0MDhMMTc2IDM1MUwxMzUgMzc5TDE1MiAzMjVMMTA1IDM0MkwxMzUgMjkzTDg0IDMwMEwxMjMgMjU4TDc0IDI1M0wxMTggMjIwTDcyIDIwNUwxMjEgMTg1TDgwIDE2MEwxMzIgMTU0TDk3IDEyMEwxNDggMTI3TDEyMSA4NkwxNjggMTA1TDE1MSA1OUwxOTIgODlMMTg2IDQwTDIxOCA3OEwyMjMgMjhMMjQzIDczTDI1NiAyNloiIGZpbGw9InVybCgjbWV0YWwpIiBmaWxsLW9wYWNpdHk9Ii45Ii8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjI0NiIgcng9IjE0OCIgcnk9IjE4OCIgZmlsbD0iIzA3MTAwRCIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSIyNDYiIHJ4PSIxMjMiIHJ5PSIxNjIiIGZpbGw9InVybCgjdm9pZCkiIHN0cm9rZT0iI0M3Q0VDOSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjI0NiIgcng9IjkzIiByeT0iMTI4IiBzdHJva2U9IiM2NjczNkIiIHN0cm9rZS1vcGFjaXR5PSIuNjUiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxwYXRoIGQ9Ik0yMTUgMjM3QzIyMSAxODkgMjM2IDE2MSAyNTYgMTQ1QzI3NyAxNjMgMjkxIDE5MCAyOTcgMjM3QzI4OCAyMjIgMjc0IDIxMyAyNTYgMjEzQzIzOCAyMTMgMjI0IDIyMiAyMTUgMjM3WiIgZmlsbD0iIzlFQUFBMyIgZmlsbC1vcGFjaXR5PSIuMzQiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTIiIHI9IjgiIGZpbGw9IiNFOEVDRTkiLz4KPC9nPgo8L3N2Zz4=" alt="" />
+          <span>BAD HOLLOW / EST. 2026</span>
+        </div>
+        <div class="studio-copy">
+          <p class="eyebrow">THE STUDIO</p>
+          <h2>Polished enough to ship.<br>Odd enough to remember.</h2>
+          <p>
+            BAD Hollow Studios is an independent studio building small games and useful apps
+            without sanding off all the personality. Some are dark. Some are cozy.
+            Some are privacy tools. Apparently consistency is a prison.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <p class="eyebrow">CONTACT</p>
+      <h2>Need the studio?</h2>
+      <p>
+        Product support, business inquiries, press, mildly suspicious compliments —
+        there’s an inbox for that.
+      </p>
+
+      <div class="contact-grid">
+        <a href="mailto:hello@badhollowstudios.com">
+          <span class="contact-label">General</span>
+          <strong>hello@badhollowstudios.com</strong>
+        </a>
+        <a href="mailto:support@badhollowstudios.com">
+          <span class="contact-label">App support</span>
+          <strong>support@badhollowstudios.com</strong>
+        </a>
+        <a href="mailto:privacy@badhollowstudios.com">
+          <span class="contact-label">Privacy</span>
+          <strong>privacy@badhollowstudios.com</strong>
+        </a>
+        <a href="mailto:business@badhollowstudios.com">
+          <span class="contact-label">Business</span>
+          <strong>business@badhollowstudios.com</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgogIDxsaW5lYXJHcmFkaWVudCBpZD0ibWV0YWwiIHgxPSI5NiIgeTE9IjcwIiB4Mj0iNDEwIiB5Mj0iNDUwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRjJGNEYzIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ii40MiIgc3RvcC1jb2xvcj0iI0E2QjBBQSIvPgogICAgPHN0b3Agb2Zmc2V0PSIuNzIiIHN0b3AtY29sb3I9IiNFNEU4RTUiLz4KICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdEODk4MiIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJ2b2lkIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDI1NiAyMzUpIHJvdGF0ZSg5MCkgc2NhbGUoMTU4IDEyMikiPgogICAgPHN0b3Agc3RvcC1jb2xvcj0iIzEzMjQxRSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDUwOTA4Ii8+CiAgPC9yYWRpYWxHcmFkaWVudD4KPC9kZWZzPgo8ZyBvcGFjaXR5PSIuOTYiPgogIDxwYXRoIGQ9Ik0yNTYgMjZMMjY5IDczTDI4OSAyOEwyOTQgNzhMMzI2IDQwTDMyMCA4OUwzNjEgNTlMMzQ0IDEwNUwzOTEgODZMMzY0IDEyN0w0MTUgMTIwTDM4MCAxNTRMNDMyIDE2MEwzOTEgMTg1TDQ0MCAyMDVMMzk0IDIyMEw0MzggMjUzTDM4OSAyNThMNDI4IDMwMEwzNzcgMjkzTDQwNyAzNDJMMzYwIDMyNUwzNzcgMzc5TDMzNiAzNTFMMzQxIDQwOEwzMDggMzY3TDI5OSA0MjVMMjc2IDM3N0wyNTYgNDg2TDIzNiAzNzdMMjEzIDQyNUwyMDQgMzY3TDE3MSA0MDhMMTc2IDM1MUwxMzUgMzc5TDE1MiAzMjVMMTA1IDM0MkwxMzUgMjkzTDg0IDMwMEwxMjMgMjU4TDc0IDI1M0wxMTggMjIwTDcyIDIwNUwxMjEgMTg1TDgwIDE2MEwxMzIgMTU0TDk3IDEyMEwxNDggMTI3TDEyMSA4NkwxNjggMTA1TDE1MSA1OUwxOTIgODlMMTg2IDQwTDIxOCA3OEwyMjMgMjhMMjQzIDczTDI1NiAyNloiIGZpbGw9InVybCgjbWV0YWwpIiBmaWxsLW9wYWNpdHk9Ii45Ii8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjI0NiIgcng9IjE0OCIgcnk9IjE4OCIgZmlsbD0iIzA3MTAwRCIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSIyNDYiIHJ4PSIxMjMiIHJ5PSIxNjIiIGZpbGw9InVybCgjdm9pZCkiIHN0cm9rZT0iI0M3Q0VDOSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjI0NiIgcng9IjkzIiByeT0iMTI4IiBzdHJva2U9IiM2NjczNkIiIHN0cm9rZS1vcGFjaXR5PSIuNjUiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxwYXRoIGQ9Ik0yMTUgMjM3QzIyMSAxODkgMjM2IDE2MSAyNTYgMTQ1QzI3NyAxNjMgMjkxIDE5MCAyOTcgMjM3QzI4OCAyMjIgMjc0IDIxMyAyNTYgMjEzQzIzOCAyMTMgMjI0IDIyMiAyMTUgMjM3WiIgZmlsbD0iIzlFQUFBMyIgZmlsbC1vcGFjaXR5PSIuMzQiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTIiIHI9IjgiIGZpbGw9IiNFOEVDRTkiLz4KPC9nPgo8L3N2Zz4=" alt="" />
+      <span>BAD HOLLOW STUDIOS</span>
+    </div>
+    <p>© <span id="year"></span> BAD Hollow Studios. All rights reserved.</p>
+  </footer>
+
+  <script>
+const menuButton = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.site-nav');
+
+if (menuButton && nav) {
+  menuButton.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(open));
+  });
+
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+</script>
+</body>
+</html>
