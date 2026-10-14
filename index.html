@@ -404,6 +404,10 @@
       align-items:stretch;
     }
 
+    .project.centered{
+      grid-column:4 / span 6;
+    }
+
     .guilt{
       background:
         radial-gradient(circle at 15% 10%, rgba(126,67,70,.13), transparent 34%),
@@ -420,6 +424,12 @@
       background:
         radial-gradient(circle at 83% 0%, rgba(100,66,156,.17), transparent 40%),
         linear-gradient(145deg,#151224,#090b13 68%);
+    }
+
+    .pittiepop{
+      background:
+        radial-gradient(circle at 82% 0%, rgba(215,129,168,.13), transparent 38%),
+        linear-gradient(145deg,#1a1422,#0a0e14 68%);
     }
 
     .scratch{
@@ -461,6 +471,7 @@
 
     .guilt .project-icon{background:linear-gradient(145deg,#47211f,#171117);color:#f4ecea}
     .pittie .project-icon{background:linear-gradient(145deg,#796a90,#9bb07f);color:#fff}
+    .pittiepop .project-icon{background:linear-gradient(145deg,#8758ae,#f39cb8);color:#fff}
     .fade .project-icon{background:linear-gradient(145deg,#291737,#613789);color:#f4eaff}
     .scratch .project-icon{background:linear-gradient(145deg,#1c2925,#5b7468);color:#edf4ef}
     .dead .project-icon{background:linear-gradient(145deg,#14192a,#41305d);color:#eee9ff}
@@ -556,7 +567,7 @@
       text-transform:uppercase;
     }
 
-    .manifesto-mark{width:120px}
+    .manifesto-mark{width:150px}
     .manifesto-mark{position:relative}
     .manifesto-mark svg{width:100%;height:auto;display:block;opacity:.72}
     .manifesto-mark .real-mark{
@@ -670,6 +681,7 @@
       .section-head{grid-template-columns:1fr;gap:24px}
       .project.featured{grid-template-columns:1fr}
       .project.featured .project-copy{padding:0}
+      .project.centered{grid-column:span 12}
       .manifesto{grid-template-columns:1fr}
       .manifesto-side{
         min-height:180px;
@@ -707,7 +719,7 @@
   <header class="site-header wrap">
     <a class="brand" href="#top" aria-label="BAD Hollow Studios home">
       <span class="brand-mini" aria-hidden="true">
-        <img class="real-mark" src="bad-hollow-mark.png" alt="" onerror="this.style.display='none'">
+        <img class="real-mark" src="assets/bad-hollow-mark.png" alt="" onerror="this.style.display='none'">
         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="miniMetal" x1="96" y1="70" x2="410" y2="450">
@@ -758,7 +770,7 @@
         <div class="orbit three"></div>
 
         <div class="hero-logo">
-          <img class="real-mark" src="bad-hollow-mark.png" alt="" onerror="this.style.display='none'">
+          <img class="real-mark" src="assets/bad-hollow-mark.png" alt="" onerror="this.style.display='none'">
           <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="metal" x1="96" y1="70" x2="410" y2="450">
@@ -809,7 +821,7 @@
       <div class="projects">
         <article class="project featured guilt">
           <div class="project-visual">
-            <div class="project-icon"><span class="fallback-glyph">GG</span><img src="guilt-grid.png" alt="Guilt Grid app icon" onerror="this.style.display='none'"></div>
+            <div class="project-icon"><span class="fallback-glyph">GG</span><img src="assets/guilt-grid.png" alt="Guilt Grid app icon" onerror="this.style.display='none'"></div>
           </div>
           <div class="project-copy">
             <div class="project-meta"><span class="status">Available now</span><span>Logic mystery</span></div>
@@ -820,7 +832,7 @@
         </article>
 
         <article class="project pittie">
-          <div class="project-visual"><div class="project-icon"><span class="fallback-glyph">♥</span><img src="pittie-puzzles.png" alt="Pittie Puzzles app icon" onerror="this.style.display='none'"></div></div>
+          <div class="project-visual"><div class="project-icon"><span class="fallback-glyph">♥</span><img src="assets/pittie-puzzles.png" alt="Pittie Puzzles app icon" onerror="this.style.display='none'"></div></div>
           <div class="project-copy">
             <div class="project-meta"><span class="status">Available now</span><span>Cozy puzzle</span></div>
             <h3>Pittie Puzzles</h3>
@@ -829,8 +841,18 @@
           </div>
         </article>
 
+        <article class="project pittiepop">
+          <div class="project-visual"><div class="project-icon"><span class="fallback-glyph">✦</span><img src="assets/pittie-pop.png" alt="Pittie Pop concept art" onerror="this.style.display='none'"></div></div>
+          <div class="project-copy">
+            <div class="project-meta"><span class="status">Coming soon</span><span>Match-three puzzler</span></div>
+            <h3>Pittie Pop</h3>
+            <p>A brighter, bouncier match-three full of pups, toys, treats, and a little bit of Zoomie Time chaos.</p>
+            <span class="project-link muted">Coming soon</span>
+          </div>
+        </article>
+
         <article class="project fade">
-          <div class="project-visual"><div class="project-icon"><span class="fallback-glyph">/</span><img src="fade-away.png" alt="Fade/Away app icon" onerror="this.style.display='none'"></div></div>
+          <div class="project-visual"><div class="project-icon"><span class="fallback-glyph">/</span><img src="assets/fade-away.png" alt="Fade/Away app icon" onerror="this.style.display='none'"></div></div>
           <div class="project-copy">
             <div class="project-meta"><span class="status">Available now</span><span>Privacy utility</span></div>
             <h3>Fade/Away</h3>
@@ -840,19 +862,19 @@
         </article>
 
         <article class="project scratch">
-          <div class="project-visual"><div class="project-icon"><span class="fallback-glyph">★</span><img src="scratch-vault.png" alt="Scratch Vault app icon" onerror="this.style.display='none'"></div></div>
+          <div class="project-visual"><div class="project-icon"><span class="fallback-glyph">★</span><img src="assets/scratch-vault.png" alt="Scratch Vault app icon" onerror="this.style.display='none'"></div></div>
           <div class="project-copy">
-            <div class="project-meta"><span class="status">Released</span><span>Digital scratchers</span></div>
+            <div class="project-meta"><span class="status">Coming soon</span><span>Digital scratchers</span></div>
             <h3>Scratch Vault</h3>
             <p>A digital scratch-off collection built for the little serotonin hit — no real-money gambling required.</p>
             <span class="project-link muted">App link coming to the studio site</span>
           </div>
         </article>
 
-        <article class="project dead">
-          <div class="project-visual"><div class="project-icon"><span class="fallback-glyph">◇</span><img src="dead-spaces.png" alt="Dead Spaces app icon" onerror="this.style.display='none'"></div></div>
+        <article class="project dead centered">
+          <div class="project-visual"><div class="project-icon"><span class="fallback-glyph">◇</span><img src="assets/dead-spaces.png" alt="Dead Spaces app icon" onerror="this.style.display='none'"></div></div>
           <div class="project-copy">
-            <div class="project-meta"><span class="status">In development</span><span>Logic puzzle</span></div>
+            <div class="project-meta"><span class="status">Coming soon</span><span>Logic puzzle</span></div>
             <h3>Dead Spaces</h3>
             <p>Numbered paths, collapsing spaces, and one tiny hooded traveler trying very hard not to step somewhere catastrophically stupid.</p>
             <span class="project-link muted">Coming soon</span>
@@ -865,7 +887,7 @@
       <div class="manifesto">
         <div class="manifesto-side">
           <div class="manifesto-mark" aria-hidden="true">
-            <img class="real-mark" src="bad-hollow-mark.png" alt="" onerror="this.style.display='none'">
+            <img class="real-mark" src="assets/bad-hollow-stacked.png" alt="" onerror="this.style.display='none'">
             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="smallMetal" x1="96" y1="70" x2="410" y2="450">
