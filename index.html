@@ -515,7 +515,11 @@
 
     .guilt .project-icon{background:linear-gradient(145deg,#47211f,#171117);color:#f4ecea}
     .pittie .project-icon{background:linear-gradient(145deg,#796a90,#9bb07f);color:#fff}
-    .pittiepop .project-icon{background:linear-gradient(145deg,#8758ae,#f39cb8);color:#fff}
+    .pittiepop .project-icon{
+      width:min(56%,220px);
+      background:linear-gradient(145deg,#8758ae,#f39cb8);
+      color:#fff;
+    }
     .fade .project-icon{background:linear-gradient(145deg,#291737,#613789);color:#f4eaff}
     .scratch .project-icon{background:linear-gradient(145deg,#1c2925,#5b7468);color:#edf4ef}
     .dead .project-icon{background:linear-gradient(145deg,#14192a,#41305d);color:#eee9ff}
@@ -636,21 +640,37 @@
       font-size:9px;
       letter-spacing:.24em;
       text-transform:uppercase;
+      background:
+        radial-gradient(circle at 50% 31%, rgba(103,121,200,.08), transparent 12rem);
     }
 
-    .manifesto-mark{width:138px}
-    .manifesto-mark{position:relative}
-    .manifesto-mark svg{width:100%;height:auto;display:block;opacity:.72}
+    .manifesto-mark{
+      width:178px;
+      position:relative;
+      align-self:center;
+      margin-top:16px;
+      isolation:isolate;
+    }
+    .manifesto-mark svg{
+      width:100%;
+      height:auto;
+      display:block;
+      opacity:.18;
+    }
     .manifesto-mark .real-mark{
       position:absolute;
-      inset:0;
-      width:100%;
-      height:100%;
+      inset:-8%;
+      width:116%;
+      height:116%;
       object-fit:contain;
       z-index:3;
-      border-radius:18%;
-      -webkit-mask-image:radial-gradient(ellipse at center, #000 45%, rgba(0,0,0,.92) 62%, rgba(0,0,0,.72) 72%, transparent 88%);
-      mask-image:radial-gradient(ellipse at center, #000 45%, rgba(0,0,0,.92) 62%, rgba(0,0,0,.72) 72%, transparent 88%);
+      border-radius:22%;
+      mix-blend-mode:screen;
+      opacity:.93;
+      filter:contrast(1.12) brightness(1.08) saturate(.72)
+             drop-shadow(0 16px 34px rgba(0,0,0,.28));
+      -webkit-mask-image:radial-gradient(ellipse at center, #000 42%, rgba(0,0,0,.97) 58%, rgba(0,0,0,.78) 70%, transparent 88%);
+      mask-image:radial-gradient(ellipse at center, #000 42%, rgba(0,0,0,.97) 58%, rgba(0,0,0,.78) 70%, transparent 88%);
     }
 
     .manifesto-copy{
@@ -782,6 +802,7 @@
       section{padding:66px 0}
       .project,.project.featured{grid-column:span 12;min-height:390px}
       .project-icon,.project.featured .project-icon{width:min(68%,235px)}
+      .pittiepop .project-icon{width:min(58%,215px)}
       .contact-grid{grid-template-columns:1fr}
       footer{width:calc(100% - 22px);flex-direction:column;align-items:flex-start}
     }
