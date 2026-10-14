@@ -1,3 +1,864 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#050612"><title>BAD Hollow Studios</title><style>
-:root{--bg:#050612;--panel:#0c1020;--text:#f3f4f8;--muted:#a8adbd;--moss:#8794c9;--line:rgba(226,231,252,.14);--line2:rgba(226,231,252,.24);--max:1180px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:radial-gradient(circle at 80% -8%,rgba(55,83,170,.24),transparent 32rem),radial-gradient(circle at 8% 34%,rgba(93,54,145,.13),transparent 28rem),radial-gradient(circle at 70% 68%,rgba(18,40,102,.10),transparent 34rem),linear-gradient(180deg,#04050d 0%,#070a18 46%,#08091b 72%,#04050d 100%);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.11;z-index:100;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.78' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.34'/%3E%3C/svg%3E")}a{color:inherit}.wrap{width:min(calc(100% - 32px),var(--max));margin:auto}.site-header{position:sticky;top:12px;z-index:50;margin-top:12px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 14px 12px 16px;border:1px solid var(--line);border-radius:20px;background:rgba(5,6,15,.80);backdrop-filter:blur(18px);box-shadow:0 20px 50px rgba(0,0,0,.24)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brand-mark{width:42px;height:42px;position:relative;display:grid;place-items:center;border-radius:50%;border:1px solid rgba(240,245,242,.34);background:radial-gradient(circle at 50% 45%,#111a38,#050611 70%)}.brand-mark:before,.brand-mark:after{content:"";position:absolute;width:2px;height:50px;border-radius:2px;background:linear-gradient(#f4f5f8,#8d94ad);opacity:.86}.brand-mark:before{transform:rotate(45deg)}.brand-mark:after{transform:rotate(-45deg)}.brand-mark span{width:7px;height:7px;border-radius:50%;background:#f3f5f3;z-index:2}.brand-type{display:flex;flex-direction:column;line-height:1}.brand-type strong{font-size:13px;letter-spacing:.18em}.brand-type small{margin-top:6px;color:var(--muted);font-size:9px;letter-spacing:.34em}.site-nav{display:flex;gap:4px}.site-nav a{padding:9px 12px;border-radius:11px;color:var(--muted);text-decoration:none;font-size:13px}.site-nav a:hover{color:white;background:rgba(125,143,214,.08)}.hero{min-height:790px;display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;padding:88px 0 72px}.eyebrow{margin:0 0 18px;color:var(--moss);font-size:10px;font-weight:750;letter-spacing:.28em;text-transform:uppercase}h1,h2{font-family:"Iowan Old Style","Baskerville","Times New Roman",serif;font-weight:500;letter-spacing:-.048em}h1{margin:0;font-size:clamp(58px,8vw,112px);line-height:.85}h1 em{color:#a9aec0;font-weight:400}.hero-copy{max-width:620px;margin:30px 0 0;color:var(--muted);font-size:clamp(16px,1.55vw,20px);line-height:1.75}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:14px;text-decoration:none;font-size:13px;font-weight:700}.primary{background:#e0e3ec;color:#090b18}.secondary{border:1px solid var(--line2);background:rgba(255,255,255,.025)}.hero-art{position:relative;min-height:540px;display:grid;place-items:center}.orbit{position:absolute;border:1px solid rgba(220,226,255,.11);border-radius:50%}.orbit.one{width:430px;height:530px;transform:rotate(-13deg)}.orbit.two{width:540px;height:360px;transform:rotate(18deg);opacity:.65}.emblem{position:relative;width:min(72%,340px);aspect-ratio:1;display:grid;place-items:center;border-radius:50%;border:1px solid rgba(239,244,241,.32);background:radial-gradient(circle at 50% 46%,#18234d 0 18%,#0c1024 52%,#050611 78%);box-shadow:0 28px 80px rgba(0,0,0,.42),inset 0 0 0 28px rgba(255,255,255,.015)}.emblem:before,.emblem:after{content:"";position:absolute;width:7px;height:118%;border-radius:8px;background:linear-gradient(#f4f5f8,#9da5bf 42%,#e6e8f0 66%,#747d9d);opacity:.82}.emblem:before{transform:rotate(45deg)}.emblem:after{transform:rotate(-45deg)}.emblem-core{width:22px;height:22px;border-radius:50%;background:#f4f6f4;z-index:2}.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:rgba(118,136,205,.025)}.strip-inner{display:flex;gap:38px;width:max-content;padding:12px 0;color:#7f86a2;font-size:9px;letter-spacing:.28em;text-transform:uppercase}.strip-inner span:after{content:"✦";margin-left:38px;color:#5d6fa8}section{padding:92px 0}.section-head{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:36px}h2{margin:0;font-size:clamp(44px,6vw,76px);line-height:.96}.intro{margin:0 0 5px;color:var(--muted);line-height:1.8}.projects{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.project{grid-column:span 6;min-height:470px;display:flex;flex-direction:column;justify-content:space-between;padding:24px;border:1px solid var(--line);border-radius:26px;transition:.24s ease}.project:hover{transform:translateY(-5px);border-color:var(--line2)}.featured{grid-column:span 12;display:grid;grid-template-columns:.95fr 1.05fr;gap:26px;min-height:520px}.guilt{background:radial-gradient(circle at 12% 10%,rgba(117,55,49,.18),transparent 34%),linear-gradient(145deg,#17100f,#090c0b 58%)}.pittie{background:radial-gradient(circle at 80% 0%,rgba(152,174,127,.20),transparent 38%),linear-gradient(145deg,#171426,#0b100d 68%)}.fade{background:radial-gradient(circle at 82% 0%,rgba(86,45,115,.22),transparent 40%),linear-gradient(145deg,#15101d,#090b0f 67%)}.scratch{background:radial-gradient(circle at 80% 0%,rgba(92,120,104,.18),transparent 40%),linear-gradient(145deg,#111916,#090d0b 67%)}.dead{background:radial-gradient(circle at 80% 0%,rgba(81,60,120,.18),transparent 40%),linear-gradient(145deg,#0f131c,#090a0d 67%)}.project-visual{min-height:235px;display:grid;place-items:center}.featured .project-visual{min-height:100%}.project-icon{width:min(62%,250px);aspect-ratio:1;border-radius:29%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.14);box-shadow:0 28px 70px rgba(0,0,0,.42);font-family:"Iowan Old Style","Baskerville",serif;font-size:clamp(46px,7vw,82px)}.featured .project-icon{width:min(74%,330px)}.guilt .project-icon{background:linear-gradient(145deg,#4d201f,#17100f)}.pittie .project-icon{background:linear-gradient(145deg,#7e6b95,#9cb481)}.fade .project-icon{background:linear-gradient(145deg,#2a1838,#6a3489)}.scratch .project-icon{background:linear-gradient(145deg,#1d2a25,#607c6d)}.dead .project-icon{background:linear-gradient(145deg,#141a27,#432e60)}.project-meta{display:flex;gap:8px 14px;flex-wrap:wrap;color:#727b98;font-size:9px;letter-spacing:.15em;text-transform:uppercase}.status{color:var(--moss)}.project h3{margin:13px 0 10px;font-size:32px;letter-spacing:-.042em}.project p{margin:0;color:var(--muted);line-height:1.75;max-width:650px}.project-link{display:inline-flex;margin-top:18px;padding-bottom:3px;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.2);font-size:13px}.muted{color:#727b98;border:0}.manifesto{min-height:540px;display:grid;grid-template-columns:.66fr 1.34fr;border:1px solid var(--line);border-radius:32px;background:radial-gradient(circle at 86% 14%,rgba(76,99,190,.20),transparent 30rem),radial-gradient(circle at 18% 82%,rgba(90,58,138,.10),transparent 24rem),linear-gradient(120deg,#101832,#080b18 68%);overflow:hidden}.manifesto-side{border-right:1px solid var(--line);padding:34px;display:flex;flex-direction:column;justify-content:space-between;color:#727b98;font-size:9px;letter-spacing:.24em;text-transform:uppercase}.manifesto-copy{align-self:end;padding:62px}.manifesto-copy p:last-child{max-width:720px;margin:27px 0 0;color:var(--muted);line-height:1.85;font-size:17px}.contact{text-align:center}.contact .lead{max-width:660px;margin:22px auto 38px;color:var(--muted);line-height:1.8}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left}.contact-grid a{display:flex;flex-direction:column;gap:7px;padding:22px;border:1px solid var(--line);border-radius:19px;text-decoration:none;background:rgba(255,255,255,.02)}.contact-grid small{color:#727b98;font-size:9px;text-transform:uppercase;letter-spacing:.16em}.contact-grid strong{font-size:14px}footer{width:min(calc(100% - 32px),var(--max));margin:auto;padding:30px 0 44px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#727b98;font-size:10px;letter-spacing:.09em}@media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto}.hero-art{min-height:390px}.section-head{grid-template-columns:1fr;gap:24px}.featured{grid-template-columns:1fr}.manifesto{grid-template-columns:1fr}.manifesto-side{min-height:150px;border-right:0;border-bottom:1px solid var(--line)}.manifesto-copy{padding:42px 30px}}@media(max-width:680px){.wrap{width:min(calc(100% - 22px),var(--max))}.site-header{width:calc(100% - 20px);margin-left:auto;margin-right:auto}.brand-type{display:none}.site-nav a{padding:8px;font-size:12px}.hero{padding:58px 0 36px}.hero-art{min-height:300px}.orbit.one{width:240px;height:290px}.orbit.two{width:300px;height:205px}.emblem{width:165px}section{padding:68px 0}.project,.featured{grid-column:span 12;min-height:410px}.project-icon,.featured .project-icon{width:min(68%,240px)}.contact-grid{grid-template-columns:1fr}footer{width:calc(100% - 22px);flex-direction:column}}
-</style></head><body><header class="site-header wrap"><a class="brand" href="#top"><div class="brand-mark"><span></span></div><div class="brand-type"><strong>BAD HOLLOW</strong><small>STUDIOS</small></div></a><nav class="site-nav"><a href="#work">Work</a><a href="#studio">Studio</a><a href="#contact">Contact</a></nav></header><main id="top"><section class="hero wrap"><div><p class="eyebrow">Independent games + apps</p><h1>Small studio.<br><em>Strange little worlds.</em></h1><p class="hero-copy">BAD Hollow Studios builds puzzles, utilities, and offbeat digital things with atmosphere, personality, and just enough sharp edges.</p><div class="hero-actions"><a class="button primary" href="#work">Explore the work</a><a class="button secondary" href="mailto:hello@badhollowstudios.com">Say hello</a></div></div><div class="hero-art"><div class="orbit one"></div><div class="orbit two"></div><div class="emblem"><div class="emblem-core"></div></div></div></section><div class="strip"><div class="strip-inner"><span>Puzzles</span><span>Games</span><span>Utilities</span><span>Odd little ideas</span><span>Independent by design</span><span>Puzzles</span><span>Games</span><span>Utilities</span></div></div><section id="work" class="wrap"><div class="section-head"><div><p class="eyebrow">The work</p><h2>Different moods.<br>Same weird little brain.</h2></div><p class="intro">From murder mysteries to cozy pitties to disposable email, the common thread is simple: make something distinct, useful, satisfying, or preferably all three.</p></div><div class="projects"><article class="project featured guilt"><div class="project-visual"><div class="project-icon">GG</div></div><div><div class="project-meta"><span class="status">Available now</span><span>Logic mystery</span></div><h3>Guilt Grid</h3><p>Murder mystery logic puzzles where every alibi, room, weapon, and clue has to survive the grid. Follow the clues. Expose the truth.</p><a class="project-link" href="https://apps.apple.com/us/app/guilt-grid/id6791083356">View on the App Store ↗</a></div></article><article class="project pittie"><div class="project-visual"><div class="project-icon">♥</div></div><div><div class="project-meta"><span class="status">Available now</span><span>Cozy puzzle</span></div><h3>Pittie Puzzles</h3><p>Cozy path-drawing puzzles starring Leela and friends. Softer around the edges. Still annoyingly good at eating your time.</p><a class="project-link" href="https://apps.apple.com/us/app/pittie-puzzles/id6816330434">View on the App Store ↗</a></div></article><article class="project fade"><div class="project-visual"><div class="project-icon">/</div></div><div><div class="project-meta"><span class="status">Available now</span><span>Privacy utility</span></div><h3>Fade/Away</h3><p>Temporary email addresses built to disappear — for sign-ups, short-lived conversations, and keeping your real inbox out of the mess.</p><a class="project-link" href="https://apps.apple.com/app/id6793329641">View on the App Store ↗</a></div></article><article class="project scratch"><div class="project-visual"><div class="project-icon">★</div></div><div><div class="project-meta"><span class="status">Released</span><span>Digital scratchers</span></div><h3>Scratch Vault</h3><p>A digital scratch-off collection built for the little serotonin hit — no real-money gambling required.</p><span class="project-link muted">App link coming soon</span></div></article><article class="project dead"><div class="project-visual"><div class="project-icon">◇</div></div><div><div class="project-meta"><span class="status">In development</span><span>Logic puzzle</span></div><h3>Dead Spaces</h3><p>Numbered paths, collapsing spaces, and one tiny hooded traveler trying very hard not to step somewhere catastrophically stupid.</p><span class="project-link muted">Coming soon</span></div></article></div></section><section id="studio" class="wrap"><div class="manifesto"><div class="manifesto-side"><span>BAD HOLLOW</span><span>EST. 2026</span></div><div class="manifesto-copy"><p class="eyebrow">The studio</p><h2>Polished enough to ship.<br>Odd enough to remember.</h2><p>BAD Hollow Studios is an independent studio building small games and useful apps without sanding off all the personality. Some are dark. Some are cozy. Some are privacy tools. Apparently consistency is a prison.</p></div></div></section><section id="contact" class="wrap contact"><p class="eyebrow">Contact</p><h2>Need the studio?</h2><p class="lead">Product support, business inquiries, press, mildly suspicious compliments — there’s an inbox for that.</p><div class="contact-grid"><a href="mailto:hello@badhollowstudios.com"><small>General</small><strong>hello@badhollowstudios.com</strong></a><a href="mailto:support@badhollowstudios.com"><small>App support</small><strong>support@badhollowstudios.com</strong></a><a href="mailto:privacy@badhollowstudios.com"><small>Privacy</small><strong>privacy@badhollowstudios.com</strong></a><a href="mailto:business@badhollowstudios.com"><small>Business</small><strong>business@badhollowstudios.com</strong></a></div></section></main><footer><span>BAD HOLLOW STUDIOS</span><span>© 2026 BAD Hollow Studios. All rights reserved.</span></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#03050b">
+  <meta name="description" content="BAD Hollow Studios — independent games and apps with atmosphere, personality, and just enough bite.">
+  <title>BAD Hollow Studios</title>
+
+  <style>
+    :root{
+      --bg:#03050b;
+      --bg-soft:#060918;
+      --panel:#0a0f1e;
+      --panel-2:#0d1326;
+      --text:#f3f4f8;
+      --muted:#a8aec2;
+      --muted-2:#6f7897;
+      --silver:#e8ebf3;
+      --silver-2:#9da6bf;
+      --accent:#7485c9;
+      --accent-soft:#5868a8;
+      --violet:#6d57a4;
+      --line:rgba(226,232,255,.12);
+      --line-strong:rgba(226,232,255,.20);
+      --radius:26px;
+      --max:1180px;
+      --shadow:0 28px 90px rgba(0,0,0,.44);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      min-width:320px;
+      color:var(--text);
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      line-height:1.5;
+      background:
+        radial-gradient(circle at 78% 9%, rgba(59,79,164,.12), transparent 29rem),
+        radial-gradient(circle at 13% 41%, rgba(93,68,135,.075), transparent 25rem),
+        linear-gradient(180deg,#03050b 0%,#050816 50%,#040611 100%);
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      z-index:100;
+      opacity:.055;
+      mix-blend-mode:soft-light;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.30'/%3E%3C/svg%3E");
+    }
+
+    a{color:inherit}
+    .wrap{width:min(calc(100% - 34px),var(--max));margin:auto}
+
+    /* HEADER */
+    .site-header{
+      position:sticky;
+      top:12px;
+      z-index:40;
+      margin-top:12px;
+      padding:12px 15px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      border:1px solid var(--line);
+      border-radius:20px;
+      background:rgba(3,5,11,.78);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      box-shadow:0 18px 45px rgba(0,0,0,.24);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+    }
+
+    .brand-mini{
+      width:42px;
+      height:42px;
+      display:grid;
+      place-items:center;
+      flex:0 0 auto;
+    }
+
+    .brand-mini svg{width:42px;height:42px;display:block}
+
+    .brand-type{
+      display:flex;
+      flex-direction:column;
+      line-height:1;
+    }
+
+    .brand-type strong{
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.18em;
+    }
+
+    .brand-type small{
+      margin-top:6px;
+      color:var(--muted);
+      font-size:9px;
+      letter-spacing:.34em;
+    }
+
+    .site-nav{display:flex;gap:4px}
+    .site-nav a{
+      padding:9px 12px;
+      border-radius:11px;
+      text-decoration:none;
+      color:var(--muted);
+      font-size:13px;
+      transition:.2s ease;
+    }
+    .site-nav a:hover{color:#fff;background:rgba(255,255,255,.045)}
+
+    /* HERO */
+    .hero{
+      min-height:730px;
+      display:grid;
+      grid-template-columns:minmax(0,1.04fr) minmax(360px,.96fr);
+      align-items:center;
+      gap:58px;
+      padding:84px 0 64px;
+    }
+
+    .eyebrow{
+      margin:0 0 18px;
+      color:#8995cf;
+      font-size:10px;
+      font-weight:800;
+      letter-spacing:.28em;
+      text-transform:uppercase;
+    }
+
+    h1,h2{
+      margin:0;
+      font-family:"Iowan Old Style","Baskerville","Times New Roman",serif;
+      font-weight:500;
+      letter-spacing:-.045em;
+    }
+
+    h1{
+      max-width:690px;
+      font-size:clamp(58px,7.8vw,108px);
+      line-height:.88;
+    }
+
+    h1 em{
+      color:#aeb5cb;
+      font-style:italic;
+      font-weight:400;
+    }
+
+    .hero-copy{
+      max-width:600px;
+      margin:29px 0 0;
+      color:var(--muted);
+      font-size:clamp(16px,1.55vw,20px);
+      line-height:1.72;
+    }
+
+    .hero-actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:32px;
+    }
+
+    .button{
+      min-height:45px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:0 18px;
+      border-radius:13px;
+      text-decoration:none;
+      font-size:13px;
+      font-weight:700;
+      transition:.22s ease;
+    }
+
+    .button.primary{
+      background:#e3e6ef;
+      color:#090d18;
+    }
+    .button.primary:hover{transform:translateY(-2px);background:#fff}
+
+    .button.secondary{
+      border:1px solid var(--line-strong);
+      background:rgba(255,255,255,.018);
+    }
+    .button.secondary:hover{transform:translateY(-2px);background:rgba(255,255,255,.05)}
+
+    .hero-visual{
+      position:relative;
+      min-height:520px;
+      display:grid;
+      place-items:center;
+    }
+
+    .hero-visual::before{
+      content:"";
+      position:absolute;
+      width:390px;
+      height:390px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(64,82,167,.12), rgba(64,82,167,0) 68%);
+      filter:blur(4px);
+      pointer-events:none;
+    }
+
+    .orbit{
+      position:absolute;
+      border:1px solid rgba(225,231,255,.085);
+      border-radius:50%;
+      pointer-events:none;
+    }
+
+    .orbit.one{
+      width:440px;
+      height:300px;
+      transform:rotate(13deg);
+      animation:orbitOne 27s ease-in-out infinite;
+    }
+
+    .orbit.two{
+      width:310px;
+      height:455px;
+      transform:rotate(-17deg);
+      animation:orbitTwo 31s ease-in-out infinite;
+    }
+
+    .orbit.three{
+      width:365px;
+      height:365px;
+      opacity:.55;
+      animation:orbitThree 36s ease-in-out infinite;
+    }
+
+    .hero-logo{
+      width:min(66%,320px);
+      position:relative;
+      z-index:2;
+      filter:
+        drop-shadow(0 26px 70px rgba(0,0,0,.52))
+        drop-shadow(0 0 28px rgba(92,111,195,.09));
+      animation:driftLogo 13.5s ease-in-out infinite;
+      will-change:transform;
+    }
+
+    .hero-logo svg{width:100%;height:auto;display:block}
+
+    .hero-caption{
+      position:absolute;
+      bottom:18px;
+      display:flex;
+      gap:10px;
+      color:var(--muted-2);
+      font-size:9px;
+      letter-spacing:.34em;
+      text-transform:uppercase;
+    }
+
+    .hero-caption span:nth-child(2){color:#6573b3}
+
+    @keyframes driftLogo{
+      0%   {transform:translate(-11px, 7px) rotate(-1deg)}
+      18%  {transform:translate( 13px,-11px) rotate(.45deg)}
+      39%  {transform:translate( 23px,  4px) rotate(1deg)}
+      59%  {transform:translate(  4px, 16px) rotate(.12deg)}
+      79%  {transform:translate(-20px, -5px) rotate(-.8deg)}
+      100% {transform:translate(-11px, 7px) rotate(-1deg)}
+    }
+
+    @keyframes orbitOne{
+      0%,100%{transform:rotate(13deg) translate(0,0)}
+      50%{transform:rotate(18deg) translate(8px,-6px)}
+    }
+
+    @keyframes orbitTwo{
+      0%,100%{transform:rotate(-17deg) translate(0,0)}
+      50%{transform:rotate(-10deg) translate(-8px,7px)}
+    }
+
+    @keyframes orbitThree{
+      0%,100%{transform:scale(1) translate(0,0)}
+      50%{transform:scale(1.02) translate(4px,-4px)}
+    }
+
+    /* DIVIDER */
+    .studio-strip{
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      background:rgba(255,255,255,.012);
+      overflow:hidden;
+    }
+
+    .studio-strip-inner{
+      width:max-content;
+      display:flex;
+      gap:38px;
+      padding:11px 0;
+      color:#737d9f;
+      font-size:9px;
+      letter-spacing:.27em;
+      text-transform:uppercase;
+      animation:marquee 28s linear infinite;
+    }
+
+    .studio-strip-inner span::after{
+      content:"✦";
+      margin-left:38px;
+      color:#5967a2;
+    }
+
+    @keyframes marquee{to{transform:translateX(-50%)}}
+
+    /* GENERAL SECTIONS */
+    section{padding:88px 0}
+
+    .section-head{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:72px;
+      align-items:end;
+      margin-bottom:34px;
+    }
+
+    h2{
+      font-size:clamp(42px,6vw,74px);
+      line-height:.96;
+    }
+
+    .section-intro{
+      margin:0 0 5px;
+      color:var(--muted);
+      max-width:520px;
+      line-height:1.8;
+    }
+
+    /* PROJECTS */
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:16px;
+    }
+
+    .project{
+      grid-column:span 6;
+      min-height:450px;
+      padding:23px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      overflow:hidden;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:0 18px 48px rgba(0,0,0,.14);
+      transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease;
+    }
+
+    .project:hover{
+      transform:translateY(-4px);
+      border-color:var(--line-strong);
+      box-shadow:0 28px 68px rgba(0,0,0,.24);
+    }
+
+    .project.featured{
+      grid-column:span 12;
+      min-height:500px;
+      display:grid;
+      grid-template-columns:.95fr 1.05fr;
+      gap:26px;
+      align-items:stretch;
+    }
+
+    .guilt{
+      background:
+        radial-gradient(circle at 15% 10%, rgba(126,67,70,.13), transparent 34%),
+        linear-gradient(145deg,#15121b,#090c13 62%);
+    }
+
+    .pittie{
+      background:
+        radial-gradient(circle at 82% 0%, rgba(148,168,120,.13), transparent 39%),
+        linear-gradient(145deg,#151525,#090e14 68%);
+    }
+
+    .fade{
+      background:
+        radial-gradient(circle at 83% 0%, rgba(100,66,156,.17), transparent 40%),
+        linear-gradient(145deg,#151224,#090b13 68%);
+    }
+
+    .scratch{
+      background:
+        radial-gradient(circle at 82% 0%, rgba(91,119,105,.13), transparent 40%),
+        linear-gradient(145deg,#10171b,#090c11 68%);
+    }
+
+    .dead{
+      background:
+        radial-gradient(circle at 82% 0%, rgba(75,64,135,.15), transparent 40%),
+        linear-gradient(145deg,#101321,#090b12 68%);
+    }
+
+    .project-visual{
+      min-height:225px;
+      display:grid;
+      place-items:center;
+    }
+
+    .project.featured .project-visual{min-height:100%}
+
+    .project-icon{
+      width:min(62%,245px);
+      aspect-ratio:1;
+      display:grid;
+      place-items:center;
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.13);
+      border-radius:28%;
+      box-shadow:0 26px 64px rgba(0,0,0,.40);
+      font-family:"Iowan Old Style","Baskerville",serif;
+      font-size:clamp(45px,7vw,80px);
+      letter-spacing:-.05em;
+    }
+
+    .project.featured .project-icon{width:min(72%,320px)}
+
+    .guilt .project-icon{background:linear-gradient(145deg,#47211f,#171117);color:#f4ecea}
+    .pittie .project-icon{background:linear-gradient(145deg,#796a90,#9bb07f);color:#fff}
+    .fade .project-icon{background:linear-gradient(145deg,#291737,#613789);color:#f4eaff}
+    .scratch .project-icon{background:linear-gradient(145deg,#1c2925,#5b7468);color:#edf4ef}
+    .dead .project-icon{background:linear-gradient(145deg,#14192a,#41305d);color:#eee9ff}
+
+    .project-icon::after{
+      content:"";
+      position:absolute;
+      inset:10%;
+      border:1px solid rgba(255,255,255,.16);
+      border-radius:24%;
+    }
+
+    .project-copy{align-self:end}
+    .project.featured .project-copy{padding:18px 14px 18px 0}
+
+    .project-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px 14px;
+      color:var(--muted-2);
+      font-size:9px;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+    }
+
+    .status{color:#9aa6dc}
+    .status::before{content:"●";font-size:7px;margin-right:7px}
+
+    .project h3{
+      margin:13px 0 10px;
+      font-size:31px;
+      letter-spacing:-.04em;
+    }
+
+    .project p{
+      margin:0;
+      max-width:650px;
+      color:var(--muted);
+      line-height:1.75;
+    }
+
+    .project-link{
+      display:inline-flex;
+      gap:8px;
+      margin-top:18px;
+      padding-bottom:3px;
+      font-size:13px;
+      text-decoration:none;
+      border-bottom:1px solid rgba(255,255,255,.18);
+    }
+
+    .project-link.muted{color:var(--muted-2);border-bottom:0}
+
+    /* STUDIO */
+    .manifesto{
+      min-height:515px;
+      display:grid;
+      grid-template-columns:.66fr 1.34fr;
+      overflow:hidden;
+      border:1px solid var(--line);
+      border-radius:32px;
+      background:
+        radial-gradient(circle at 84% 14%, rgba(71,90,176,.12), transparent 28rem),
+        radial-gradient(circle at 18% 82%, rgba(92,67,137,.07), transparent 24rem),
+        linear-gradient(120deg,#0c1328,#070a15 70%);
+    }
+
+    .manifesto-side{
+      padding:34px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      border-right:1px solid var(--line);
+      color:var(--muted-2);
+      font-size:9px;
+      letter-spacing:.24em;
+      text-transform:uppercase;
+    }
+
+    .manifesto-mark{width:120px}
+    .manifesto-mark svg{width:100%;height:auto;display:block;opacity:.72}
+
+    .manifesto-copy{
+      align-self:end;
+      padding:58px;
+    }
+
+    .manifesto-copy p:last-child{
+      max-width:700px;
+      margin:26px 0 0;
+      color:var(--muted);
+      line-height:1.84;
+      font-size:17px;
+    }
+
+    /* CONTACT */
+    .contact{text-align:center}
+
+    .contact .lead{
+      max-width:650px;
+      margin:22px auto 38px;
+      color:var(--muted);
+      line-height:1.8;
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      text-align:left;
+    }
+
+    .contact-grid a{
+      display:flex;
+      flex-direction:column;
+      gap:7px;
+      padding:21px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      text-decoration:none;
+      background:rgba(255,255,255,.016);
+      transition:.2s ease;
+    }
+
+    .contact-grid a:hover{
+      transform:translateY(-2px);
+      background:rgba(255,255,255,.045);
+    }
+
+    .contact-grid small{
+      color:var(--muted-2);
+      font-size:9px;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+    }
+
+    .contact-grid strong{
+      font-size:14px;
+      font-weight:600;
+      overflow-wrap:anywhere;
+    }
+
+    footer{
+      width:min(calc(100% - 34px),var(--max));
+      margin:auto;
+      padding:28px 0 42px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      border-top:1px solid var(--line);
+      color:var(--muted-2);
+      font-size:10px;
+      letter-spacing:.09em;
+    }
+
+    .footer-brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      letter-spacing:.18em;
+    }
+
+    .footer-dot{
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:#7180c2;
+      box-shadow:0 0 16px rgba(113,128,194,.34);
+    }
+
+    @media(max-width:900px){
+      .hero{
+        grid-template-columns:1fr;
+        min-height:auto;
+        padding-top:62px;
+        gap:24px;
+      }
+
+      .hero-visual{min-height:390px}
+      .section-head{grid-template-columns:1fr;gap:24px}
+      .project.featured{grid-template-columns:1fr}
+      .project.featured .project-copy{padding:0}
+      .manifesto{grid-template-columns:1fr}
+      .manifesto-side{
+        min-height:180px;
+        border-right:0;
+        border-bottom:1px solid var(--line);
+        flex-direction:row;
+        align-items:flex-end;
+      }
+      .manifesto-mark{width:90px}
+      .manifesto-copy{padding:40px 30px}
+    }
+
+    @media(max-width:680px){
+      .wrap{width:min(calc(100% - 22px),var(--max))}
+      .site-header{width:calc(100% - 20px);margin-left:auto;margin-right:auto}
+      .brand-type{display:none}
+      .site-nav a{padding:8px;font-size:12px}
+      .hero{padding:50px 0 32px}
+      h1{font-size:clamp(52px,16vw,76px)}
+      .hero-visual{min-height:305px}
+      .orbit.one{width:285px;height:200px}
+      .orbit.two{width:205px;height:295px}
+      .orbit.three{width:240px;height:240px}
+      .hero-logo{width:165px}
+      section{padding:66px 0}
+      .project,.project.featured{grid-column:span 12;min-height:390px}
+      .project-icon,.project.featured .project-icon{width:min(68%,235px)}
+      .contact-grid{grid-template-columns:1fr}
+      footer{width:calc(100% - 22px);flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="#top" aria-label="BAD Hollow Studios home">
+      <span class="brand-mini" aria-hidden="true">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="miniMetal" x1="96" y1="70" x2="410" y2="450">
+              <stop stop-color="#F4F6FA"/>
+              <stop offset=".42" stop-color="#A6AEC4"/>
+              <stop offset=".72" stop-color="#E6E9F1"/>
+              <stop offset="1" stop-color="#76809D"/>
+            </linearGradient>
+          </defs>
+          <path d="M256 26L269 73L289 28L294 78L326 40L320 89L361 59L344 105L391 86L364 127L415 120L380 154L432 160L391 185L440 205L394 220L438 253L389 258L428 300L377 293L407 342L360 325L377 379L336 351L341 408L308 367L299 425L276 377L256 486L236 377L213 425L204 367L171 408L176 351L135 379L152 325L105 342L135 293L84 300L123 258L74 253L118 220L72 205L121 185L80 160L132 154L97 120L148 127L121 86L168 105L151 59L192 89L186 40L218 78L223 28L243 73L256 26Z" fill="url(#miniMetal)" fill-opacity=".9"/>
+          <ellipse cx="256" cy="246" rx="148" ry="188" fill="#050817"/>
+          <ellipse cx="256" cy="246" rx="123" ry="162" fill="#0A1025" stroke="#C7CDD9" stroke-width="4"/>
+          <circle cx="256" cy="252" r="8" fill="#F2F4F8"/>
+        </svg>
+      </span>
+      <span class="brand-type">
+        <strong>BAD HOLLOW</strong>
+        <small>STUDIOS</small>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div>
+        <p class="eyebrow">Independent games + apps</p>
+        <h1>Small studio.<br><em>Strange little worlds.</em></h1>
+        <p class="hero-copy">
+          BAD Hollow Studios builds puzzles, utilities, and offbeat digital things
+          with atmosphere, personality, and just enough sharp edges.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore the work</a>
+          <a class="button secondary" href="mailto:hello@badhollowstudios.com">Say hello</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit one"></div>
+        <div class="orbit two"></div>
+        <div class="orbit three"></div>
+
+        <div class="hero-logo">
+          <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="metal" x1="96" y1="70" x2="410" y2="450">
+                <stop stop-color="#F7F8FC"/>
+                <stop offset=".40" stop-color="#A9B0C6"/>
+                <stop offset=".70" stop-color="#E8EBF3"/>
+                <stop offset="1" stop-color="#737D9C"/>
+              </linearGradient>
+              <radialGradient id="void" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 235) rotate(90) scale(158 122)">
+                <stop stop-color="#18234A"/>
+                <stop offset="1" stop-color="#050815"/>
+              </radialGradient>
+            </defs>
+
+            <path d="M256 26L269 73L289 28L294 78L326 40L320 89L361 59L344 105L391 86L364 127L415 120L380 154L432 160L391 185L440 205L394 220L438 253L389 258L428 300L377 293L407 342L360 325L377 379L336 351L341 408L308 367L299 425L276 377L256 486L236 377L213 425L204 367L171 408L176 351L135 379L152 325L105 342L135 293L84 300L123 258L74 253L118 220L72 205L121 185L80 160L132 154L97 120L148 127L121 86L168 105L151 59L192 89L186 40L218 78L223 28L243 73L256 26Z" fill="url(#metal)" fill-opacity=".92"/>
+            <ellipse cx="256" cy="246" rx="148" ry="188" fill="#050816"/>
+            <ellipse cx="256" cy="246" rx="123" ry="162" fill="url(#void)" stroke="#C9CFDE" stroke-width="4"/>
+            <ellipse cx="256" cy="246" rx="93" ry="128" stroke="#6F7897" stroke-opacity=".65" stroke-width="2"/>
+            <circle cx="256" cy="252" r="8" fill="#F4F6FA"/>
+          </svg>
+        </div>
+
+        <div class="hero-caption">
+          <span>BAD</span><span>/</span><span>HOLLOW</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="studio-strip">
+      <div class="studio-strip-inner">
+        <span>Puzzles</span><span>Games</span><span>Utilities</span><span>Odd little ideas</span><span>Independent by design</span>
+        <span>Puzzles</span><span>Games</span><span>Utilities</span><span>Odd little ideas</span><span>Independent by design</span>
+      </div>
+    </div>
+
+    <section id="work" class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">The work</p>
+          <h2>Different moods.<br>Same weird little brain.</h2>
+        </div>
+        <p class="section-intro">
+          From murder mysteries to cozy pitties to disposable email, the common thread is simple:
+          make something distinct, useful, satisfying, or preferably all three.
+        </p>
+      </div>
+
+      <div class="projects">
+        <article class="project featured guilt">
+          <div class="project-visual">
+            <div class="project-icon">GG</div>
+          </div>
+          <div class="project-copy">
+            <div class="project-meta"><span class="status">Available now</span><span>Logic mystery</span></div>
+            <h3>Guilt Grid</h3>
+            <p>Murder mystery logic puzzles where every alibi, room, weapon, and clue has to survive the grid. Follow the clues. Expose the truth.</p>
+            <a class="project-link" href="https://apps.apple.com/us/app/guilt-grid/id6791083356" target="_blank" rel="noopener">View on the App Store ↗</a>
+          </div>
+        </article>
+
+        <article class="project pittie">
+          <div class="project-visual"><div class="project-icon">♥</div></div>
+          <div class="project-copy">
+            <div class="project-meta"><span class="status">Available now</span><span>Cozy puzzle</span></div>
+            <h3>Pittie Puzzles</h3>
+            <p>Cozy path-drawing puzzles starring Leela and friends. Softer around the edges. Still annoyingly good at eating your time.</p>
+            <a class="project-link" href="https://apps.apple.com/us/app/pittie-puzzles/id6816330434" target="_blank" rel="noopener">View on the App Store ↗</a>
+          </div>
+        </article>
+
+        <article class="project fade">
+          <div class="project-visual"><div class="project-icon">/</div></div>
+          <div class="project-copy">
+            <div class="project-meta"><span class="status">Available now</span><span>Privacy utility</span></div>
+            <h3>Fade/Away</h3>
+            <p>Temporary email addresses built to disappear — for sign-ups, short-lived conversations, and keeping your real inbox out of the mess.</p>
+            <a class="project-link" href="https://apps.apple.com/app/id6793329641" target="_blank" rel="noopener">View on the App Store ↗</a>
+          </div>
+        </article>
+
+        <article class="project scratch">
+          <div class="project-visual"><div class="project-icon">★</div></div>
+          <div class="project-copy">
+            <div class="project-meta"><span class="status">Released</span><span>Digital scratchers</span></div>
+            <h3>Scratch Vault</h3>
+            <p>A digital scratch-off collection built for the little serotonin hit — no real-money gambling required.</p>
+            <span class="project-link muted">App link coming to the studio site</span>
+          </div>
+        </article>
+
+        <article class="project dead">
+          <div class="project-visual"><div class="project-icon">◇</div></div>
+          <div class="project-copy">
+            <div class="project-meta"><span class="status">In development</span><span>Logic puzzle</span></div>
+            <h3>Dead Spaces</h3>
+            <p>Numbered paths, collapsing spaces, and one tiny hooded traveler trying very hard not to step somewhere catastrophically stupid.</p>
+            <span class="project-link muted">Coming soon</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="studio" class="wrap">
+      <div class="manifesto">
+        <div class="manifesto-side">
+          <div class="manifesto-mark" aria-hidden="true">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="smallMetal" x1="96" y1="70" x2="410" y2="450">
+                  <stop stop-color="#F2F4F8"/>
+                  <stop offset=".45" stop-color="#A0A9C0"/>
+                  <stop offset="1" stop-color="#747E9D"/>
+                </linearGradient>
+              </defs>
+              <path d="M256 26L269 73L289 28L294 78L326 40L320 89L361 59L344 105L391 86L364 127L415 120L380 154L432 160L391 185L440 205L394 220L438 253L389 258L428 300L377 293L407 342L360 325L377 379L336 351L341 408L308 367L299 425L276 377L256 486L236 377L213 425L204 367L171 408L176 351L135 379L152 325L105 342L135 293L84 300L123 258L74 253L118 220L72 205L121 185L80 160L132 154L97 120L148 127L121 86L168 105L151 59L192 89L186 40L218 78L223 28L243 73L256 26Z" fill="url(#smallMetal)" fill-opacity=".88"/>
+              <ellipse cx="256" cy="246" rx="148" ry="188" fill="#060919"/>
+              <ellipse cx="256" cy="246" rx="123" ry="162" fill="#0D1530" stroke="#BFC6D8" stroke-width="4"/>
+            </svg>
+          </div>
+          <span>BAD HOLLOW / EST. 2026</span>
+        </div>
+
+        <div class="manifesto-copy">
+          <p class="eyebrow">The studio</p>
+          <h2>Polished enough to ship.<br>Odd enough to remember.</h2>
+          <p>BAD Hollow Studios is an independent studio building small games and useful apps without sanding off all the personality. Some are dark. Some are cozy. Some are privacy tools. Apparently consistency is a prison.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Need the studio?</h2>
+      <p class="lead">Product support, business inquiries, press, mildly suspicious compliments — there’s an inbox for that.</p>
+
+      <div class="contact-grid">
+        <a href="mailto:hello@badhollowstudios.com"><small>General</small><strong>hello@badhollowstudios.com</strong></a>
+        <a href="mailto:support@badhollowstudios.com"><small>App support</small><strong>support@badhollowstudios.com</strong></a>
+        <a href="mailto:privacy@badhollowstudios.com"><small>Privacy</small><strong>privacy@badhollowstudios.com</strong></a>
+        <a href="mailto:business@badhollowstudios.com"><small>Business</small><strong>business@badhollowstudios.com</strong></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="footer-dot"></span>BAD HOLLOW STUDIOS</div>
+    <span>© 2026 BAD Hollow Studios. All rights reserved.</span>
+  </footer>
+</body>
+</html>
