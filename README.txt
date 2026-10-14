@@ -1,0 +1,1 @@
+Upload/replace index.html plus the PNG files in this folder at the repo root. These overwrite the existing files and polish the live site.
