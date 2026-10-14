@@ -230,6 +230,22 @@
       pointer-events:none;
     }
 
+    .hero-visual::after{
+      content:"";
+      position:absolute;
+      inset:10% 2% 6% 4%;
+      pointer-events:none;
+      opacity:.46;
+      background:
+        radial-gradient(circle at 26% 27%, rgba(255,255,255,.14) 0 1.4px, transparent 2px),
+        radial-gradient(circle at 76% 24%, rgba(255,255,255,.10) 0 1.1px, transparent 1.7px),
+        radial-gradient(circle at 70% 72%, rgba(255,255,255,.08) 0 1.1px, transparent 1.8px),
+        radial-gradient(circle at 20% 70%, transparent 0 24px, rgba(148,166,235,.10) 24px 25px, transparent 26px),
+        radial-gradient(circle at 83% 56%, transparent 0 38px, rgba(148,166,235,.09) 38px 39px, transparent 40px),
+        linear-gradient(112deg, transparent 0 42%, rgba(171,183,232,.085) 42% 42.35%, transparent 42.7%),
+        linear-gradient(18deg, transparent 0 64%, rgba(171,183,232,.06) 64% 64.2%, transparent 64.45%);
+    }
+
     .orbit{
       position:absolute;
       border:1px solid rgba(225,231,255,.085);
@@ -265,7 +281,7 @@
       filter:
         drop-shadow(0 26px 70px rgba(0,0,0,.52))
         drop-shadow(0 0 28px rgba(92,111,195,.09));
-      animation:driftLogo 13.5s ease-in-out infinite;
+      animation:driftLogo 10.8s ease-in-out infinite;
       will-change:transform;
     }
 
@@ -278,6 +294,8 @@
       object-fit:contain;
       z-index:4;
       border-radius:22%;
+      -webkit-mask-image:radial-gradient(ellipse at center, #000 42%, rgba(0,0,0,.96) 58%, rgba(0,0,0,.72) 70%, transparent 84%);
+      mask-image:radial-gradient(ellipse at center, #000 42%, rgba(0,0,0,.96) 58%, rgba(0,0,0,.72) 70%, transparent 84%);
     }
 
     .hero-caption{
@@ -389,6 +407,32 @@
       transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease;
     }
 
+    .project::before{
+      content:"";
+      position:absolute;
+      right:18px;
+      bottom:18px;
+      width:84px;
+      height:84px;
+      border-radius:50%;
+      border:1px solid rgba(225,232,255,.07);
+      opacity:.55;
+      pointer-events:none;
+    }
+
+    .project::after{
+      content:"";
+      position:absolute;
+      right:52px;
+      bottom:52px;
+      width:7px;
+      height:7px;
+      border-radius:50%;
+      background:rgba(176,188,235,.18);
+      box-shadow:0 0 0 14px rgba(176,188,235,.035);
+      pointer-events:none;
+    }
+
     .project:hover{
       transform:translateY(-4px);
       border-color:var(--line-strong);
@@ -459,9 +503,9 @@
       place-items:center;
       position:relative;
       overflow:hidden;
-      border:1px solid rgba(255,255,255,.13);
+      border:1px solid rgba(255,255,255,.10);
       border-radius:28%;
-      box-shadow:0 26px 64px rgba(0,0,0,.40);
+      box-shadow:0 26px 64px rgba(0,0,0,.34);
       font-family:"Iowan Old Style","Baskerville",serif;
       font-size:clamp(45px,7vw,80px);
       letter-spacing:-.05em;
@@ -483,6 +527,8 @@
       height:100%;
       object-fit:cover;
       z-index:3;
+      border-radius:28%;
+      box-shadow:0 16px 38px rgba(0,0,0,.28);
     }
 
     .project-icon .fallback-glyph{
@@ -494,7 +540,7 @@
       content:"";
       position:absolute;
       inset:10%;
-      border:1px solid rgba(255,255,255,.16);
+      border:1px solid rgba(255,255,255,.14);
       border-radius:24%;
       z-index:4;
       pointer-events:none;
@@ -553,10 +599,35 @@
         radial-gradient(circle at 84% 14%, rgba(71,90,176,.12), transparent 28rem),
         radial-gradient(circle at 18% 82%, rgba(92,67,137,.07), transparent 24rem),
         linear-gradient(120deg,#0c1328,#070a15 70%);
+      position:relative;
+    }
+
+    .manifesto::before{
+      content:"";
+      position:absolute;
+      inset:14% 6% auto auto;
+      width:220px;
+      height:220px;
+      border-radius:50%;
+      border:1px solid rgba(225,232,255,.06);
+      opacity:.55;
+      pointer-events:none;
+    }
+
+    .manifesto::after{
+      content:"";
+      position:absolute;
+      right:13%;
+      top:22%;
+      width:120px;
+      height:1px;
+      background:linear-gradient(90deg, transparent, rgba(225,232,255,.14), transparent);
+      pointer-events:none;
     }
 
     .manifesto-side{
       padding:34px;
+      position:relative;
       display:flex;
       flex-direction:column;
       justify-content:space-between;
@@ -567,7 +638,7 @@
       text-transform:uppercase;
     }
 
-    .manifesto-mark{width:150px}
+    .manifesto-mark{width:138px}
     .manifesto-mark{position:relative}
     .manifesto-mark svg{width:100%;height:auto;display:block;opacity:.72}
     .manifesto-mark .real-mark{
@@ -578,6 +649,8 @@
       object-fit:contain;
       z-index:3;
       border-radius:18%;
+      -webkit-mask-image:radial-gradient(ellipse at center, #000 45%, rgba(0,0,0,.92) 62%, rgba(0,0,0,.72) 72%, transparent 88%);
+      mask-image:radial-gradient(ellipse at center, #000 45%, rgba(0,0,0,.92) 62%, rgba(0,0,0,.72) 72%, transparent 88%);
     }
 
     .manifesto-copy{
@@ -887,7 +960,7 @@
       <div class="manifesto">
         <div class="manifesto-side">
           <div class="manifesto-mark" aria-hidden="true">
-            <img class="real-mark" src="bad-hollow-stacked.png" alt="" onerror="this.style.display='none'">
+            <img class="real-mark" src="bad-hollow-mark.png" alt="" onerror="this.style.display='none'">
             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="smallMetal" x1="96" y1="70" x2="410" y2="450">
